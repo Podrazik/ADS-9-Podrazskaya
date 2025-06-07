@@ -8,7 +8,7 @@
 #include <algorithm>
 #include "tree.h"
 
-PMTree::PMTree(const std::vector  <char>& elements) {
+PMTree::PMTree(const std::vector<char>& elements) {
     if (elements.empty()) {
         _root = nullptr;
         final_permut = 0;
