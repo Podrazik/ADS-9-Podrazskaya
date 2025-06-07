@@ -6,13 +6,13 @@
 
 class PMTree {
  public:
-    PMTree(const std::vector<char>& elements);
+    explicit PMTree(const std::vector<char>& elements);
 
     struct Node {
         char value;
         std::vector<std::shared_ptr<Node>> children;
 
-        Node(char val) : value(val) {}
+        explicit Node(char val) : value(val) {}
     };
 
     std::shared_ptr<Node> getRoot() const { return _root; }
