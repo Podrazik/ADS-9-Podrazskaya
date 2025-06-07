@@ -86,7 +86,7 @@ std::vector<char> getPermut1(const PMTree& tree, int num) {
 }
 
 std::vector<char> getPermut2(const PMTree& tree, int num) {
-    if (num <= 0 || static_cast<size_t>(num) > tree.getPermutationsCount()) {
+    if (num <= 0 || static_cast<size_t>(num) > tree.getAllPermutations()) {
         return {};
     }
 
