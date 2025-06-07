@@ -77,7 +77,7 @@ std::vector<std::vector<char>> getAllPermuts(const PMTree& tree) {
     return result;
 }
 
-std::vector<char> getPermut1(const PMTree& tree, int num) {
+std::vector<char> getPerm1(const PMTree& tree, int num) {
     auto all_perms = getAllPermuts(tree);
     if (num <= 0 || static_cast<size_t>(num) > all_perms.size()) {
         return {};
@@ -85,7 +85,7 @@ std::vector<char> getPermut1(const PMTree& tree, int num) {
     return all_perms[num - 1];
 }
 
-std::vector<char> getPermut2(const PMTree& tree, int num) {
+std::vector<char> getPerm2(const PMTree& tree, int num) {
     if (num <= 0 || static_cast<size_t>(num) > tree.getAllPermutations()) {
         return {};
     }
