@@ -11,15 +11,15 @@
 PMTree::PMTree(const std::vector  <char>& elements) {
     if (elements.empty()) {
         _root = nullptr;
-        final_permuts = 0;
+        final_permut = 0;
         return;
     }
 
     _root = std::make_shared<Node>('\0');
-    final_permuts = 1;
+    final_permut = 1;
 
     for (size_t i = 1; i <= elements.size(); ++i) {
-        final_permuts *= i;
+        final_permut *= i;
     }
 
     buildTree(_root, elements);
