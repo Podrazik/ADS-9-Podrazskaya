@@ -16,7 +16,7 @@ class PMTree {
     };
 
     std::shared_ptr<Node> getRoot() const { return _root; }
-    size_t getAllPermutations() const { return final_permuts; }
+    size_t getAllPermutations() const { return final_permut; }
 
  private:
     std::shared_ptr<Node> _root;
